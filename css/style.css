@@ -7,6 +7,53 @@
     box-sizing: border-box;
 }
 
+/*Modal windows code starts here*/
+
+.modal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(71, 65, 65, 0.363);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.modal-content {
+    background-color: rgba(10.5, 31.5, 52.5, 1);
+    margin: 5% auto;
+    padding: 5rem;
+    width: 600px;
+    height: 600px;
+    animation: zoom-in 1s;
+}
+
+@keyframes zoom-in {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.movie-poster-modal {
+    width: 300px;
+}
+
+.modalcontainer-poster {
+    width: 300px;
+    cursor: pointer;
+}
+
+
+/*modal window code ends here*/
+
 html{
     font-family: 'Roboto', sans-serif;
 }
@@ -172,6 +219,9 @@ footer ul li a{
     color: #777;
 }
 
+
+
+
 /*body {
     background-color: blueviolet;
-}/*
+}*/
